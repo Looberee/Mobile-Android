@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HikeDetails">
+
+  <TextView
+      android:id="@+id/editTxt"
+      android:layout_width="287dp"
+      android:layout_height="47dp"
+      android:layout_marginStart="1dp"
+      android:layout_marginTop="16dp"
+      android:fontFamily="@font/poppins_medium"
+      android:text="Edit Hike"
+      android:textAlignment="center"
+      android:textColor="@color/black"
+      android:textSize="34sp"
+      app:layout_constraintStart_toEndOf="@+id/backToHikeBtn"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+      android:id="@+id/editNameTxt"
+      android:layout_width="236dp"
+      android:layout_height="48dp"
+      android:layout_marginStart="19dp"
+      android:layout_marginTop="10dp"
+      android:fontFamily="@font/poppins_medium"
+      android:text="Name of the hike"
+      android:textColor="@color/black"
+      android:textSize="18sp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/editTxt" />
+
+  <TextView
+      android:id="@+id/editDateTxt"
+      android:layout_width="236dp"
+      android:layout_height="36dp"
+      android:layout_marginStart="19dp"
+      android:layout_marginTop="10dp"
+      android:fontFamily="@font/poppins_medium"
+      android:text="Date of the hike"
+      android:textColor="@color/black"
+      android:textSize="18dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/editLocationInput" />
+
+  <TextView
+      android:id="@+id/editLocationTxt"
+      android:layout_width="236dp"
+      android:layout_height="36dp"
+      android:layout_marginStart="19dp"
+      android:layout_marginTop="10dp"
+      android:fontFamily="@font/poppins_medium"
+      android:text="Location"
+      android:textColor="@color/black"
+      android:textSize="18dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/editNameInput" />
+
+  <TextView
+      android:id="@+id/editDesTxt"
+      android:layout_width="167dp"
+      android:layout_height="36dp"
+      android:layout_marginStart="19dp"
+      android:layout_marginTop="10dp"
+      android:fontFamily="@font/poppins_medium"
+      android:text="Description"
+      android:textColor="@color/black"
+      android:textSize="18sp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/editLevelTxt" />
+
+  <TextView
+      android:id="@+id/editLengthTxt"
+      android:layout_width="167dp"
+      android:layout_height="36dp"
+      android:layout_marginStart="19dp"
+      android:layout_marginTop="10dp"
+      android:fontFamily="@font/poppins_medium"
+      android:text="Length of the hike"
+      android:textColor="@color/black"
+      android:textSize="18sp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/editParkingTxt" />
+
+  <TextView
+      android:id="@+id/editLevelTxt"
+      android:layout_width="167dp"
+      android:layout_height="36dp"
+      android:layout_marginStart="19dp"
+      android:layout_marginTop="10dp"
+      android:fontFamily="@font/poppins_medium"
+      android:text="Difficulty Level"
+      android:textColor="@color/black"
+      android:textSize="18sp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/editLengthTxt" />
+
+  <TextView
+      android:id="@+id/editParkingTxt"
+      android:layout_width="167dp"
+      android:layout_height="36dp"
+      android:layout_marginStart="19dp"
+      android:layout_marginTop="10dp"
+      android:fontFamily="@font/poppins_medium"
+      android:text="Parking Available"
+      android:textColor="@color/black"
+      android:textSize="18sp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/editDateInput" />
+
+  <EditText
+      android:id="@+id/editNameInput"
+      android:layout_width="376dp"
+      android:layout_height="36dp"
+      android:layout_marginStart="19dp"
+      android:background="@drawable/edit_text_background"
+      android:ems="10"
+      android:hint="Son Dong"
+      android:inputType="text"
+      android:paddingLeft="20dp"
+      android:textSize="14sp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/editNameTxt" />
+
+  <EditText
+      android:id="@+id/editDateInput"
+      android:layout_width="376dp"
+      android:layout_height="36dp"
+      android:layout_marginStart="19dp"
+      android:background="@drawable/edit_text_background"
+      android:ems="10"
+      android:hint="20/11/2023"
+      android:inputType="text"
+      android:paddingLeft="20dp"
+      android:textSize="14sp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/editDateTxt" />
+
+  <EditText
+      android:id="@+id/editLocationInput"
+      android:layout_width="376dp"
+      android:layout_height="36dp"
+      android:layout_marginStart="19dp"
+      android:background="@drawable/edit_text_background"
+      android:ems="10"
+      android:hint="Quang Binh"
+      android:inputType="text"
+      android:paddingLeft="20dp"
+      android:textSize="14sp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/editLocationTxt" />
+
+  <Spinner
+      android:id="@+id/editLevelInput"
+      android:layout_width="200dp"
+      android:layout_height="36dp"
+      android:layout_marginStart="8dp"
+      android:layout_marginBottom="56dp"
+      android:background="@drawable/edit_text_background"
+      android:ems="10"
+      android:entries="@array/levelArray"
+      android:hint="HIGH"
+      android:inputType="text"
+      android:textAlignment="center"
+      android:textSize="14sp"
+      app:layout_constraintBottom_toTopOf="@+id/editDesInput"
+      app:layout_constraintStart_toEndOf="@+id/editLevelTxt" />
+
+  <EditText
+      android:id="@+id/editDesInput"
+      android:layout_width="376dp"
+      android:layout_height="119dp"
+      android:layout_marginStart="19dp"
+      android:layout_marginTop="10dp"
+      android:background="@drawable/edit_text_background"
+      android:ems="10"
+      android:gravity="top"
+      android:hint="Description about the hike..."
+      android:inputType="text|textMultiLine"
+      android:padding="15dp"
+      android:textSize="14sp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/editDesTxt" />
+
+  <Spinner
+      android:id="@+id/editLengthInput"
+      android:layout_width="200dp"
+      android:layout_height="36dp"
+      android:layout_marginStart="8dp"
+      android:layout_marginBottom="8dp"
+      android:background="@drawable/edit_text_background"
+      android:ems="10"
+      android:hint="100"
+      android:entries="@array/lengthArray"
+      android:inputType="text"
+      android:textAlignment="center"
+      android:textSize="14sp"
+      app:layout_constraintBottom_toTopOf="@+id/editLevelInput"
+      app:layout_constraintStart_toEndOf="@+id/editLengthTxt" />
+
+  <Button
+      android:id="@+id/edit_hike_btn"
+      android:layout_width="376dp"
+      android:layout_height="36dp"
+      android:layout_marginStart="19dp"
+      android:layout_marginTop="10dp"
+      android:background="@drawable/button_primary"
+      android:text="UPDATE"
+      android:textColor="@color/white"
+      android:textSize="15sp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/editDesInput" />
+
+  <RadioGroup
+      android:id="@+id/editParkingRadioGroup"
+      android:layout_width="157dp"
+      android:layout_height="36dp"
+      android:layout_marginStart="8dp"
+      android:layout_marginBottom="12dp"
+      android:orientation="horizontal"
+      app:layout_constraintBottom_toTopOf="@+id/editLengthInput"
+      app:layout_constraintStart_toEndOf="@+id/editParkingTxt">
+
+    <RadioButton
+        android:id="@+id/yesRdb"
+        android:layout_width="82dp"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="Yes"
+        android:textSize="14dp" />
+
+    <RadioButton
+        android:id="@+id/noRdb"
+        android:layout_width="82dp"
+        android:layout_height="match_parent"
+        android:text="No"
+        tools:textSize="14dp" />
+  </RadioGroup>
+
+  <Button
+      android:id="@+id/backToHikeBtn"
+      android:layout_width="88dp"
+      android:layout_height="37dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:text="Back"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

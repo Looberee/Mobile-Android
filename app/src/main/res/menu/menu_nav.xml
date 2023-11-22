@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/addNav"
+        android:title="Add"
+        android:visible="true" />
+
+    <item
+        android:id="@+id/homeNav"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/searchNav"
+        android:title="Search"
+/>
+</menu>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddObservation">
+
+    <EditText
+        android:id="@+id/observationCommentInput"
+        android:layout_width="376dp"
+        android:layout_height="119dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/edit_text_background"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Description about the observation..."
+        android:inputType="text|textMultiLine"
+        android:padding="15dp"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/observationComment" />
+
+    <TextView
+        android:id="@+id/observationComment"
+        android:layout_width="262dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:paddingTop="8dp"
+        android:text="Comment"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/observationTimeInput" />
+
+    <EditText
+        android:id="@+id/observationNameInput"
+        android:layout_width="376dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/edit_text_background"
+        android:ems="10"
+        android:hint="Bird"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/observationName" />
+
+    <TextView
+        android:id="@+id/observationTime"
+        android:layout_width="262dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:paddingTop="8dp"
+        android:text="Time of observation"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/observationNameInput" />
+
+    <TextView
+        android:id="@+id/AddObservationTxt"
+        android:layout_width="295dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp"
+        android:text="Add Observation"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/backToObservationBtn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/observationName"
+        android:layout_width="262dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:paddingTop="8dp"
+        android:text="Observation"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AddObservationTxt" />
+
+    <TextView
+        android:id="@+id/observationTimeInput"
+        android:layout_width="376dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/edit_text_background"
+        android:ems="10"
+        android:hint=" 10.00 - 20/11/2023"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:paddingTop="7dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/observationTime" />
+
+    <Button
+        android:id="@+id/add_observation_btn_internal"
+        android:layout_width="376dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="8dp"
+        android:text="Add"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/observationCommentInput" />
+
+    <Button
+        android:id="@+id/backToObservationBtn"
+        android:layout_width="80dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="16dp"
+        android:text="Back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

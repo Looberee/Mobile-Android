@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contactCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/hikeName"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@drawable/edit_text_background"
+            android:maxWidth="50dp"
+            android:padding="8dp"
+            android:text="Hello"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            tools:clickable="true" />
+
+        <Button
+            android:id="@+id/add_observation_btn"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.1"
+            android:padding="5dp"
+            android:text="More" />
+
+        <Button
+            android:id="@+id/delete_hike_btn"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.1"
+            android:padding="5dp"
+            android:text="Delete"
+            android:theme="@style/ButtonCustomTheme" />
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
